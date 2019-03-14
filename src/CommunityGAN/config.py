@@ -43,12 +43,12 @@ class Config():
 
     # path settings
     def update_path(self):
-        self.train_filename = "../../data/" + self.app + "/" + self.dataset + "_train.txt"
-        self.pretrain_emb_filename_d = "../../pre_train/" + self.app + "/" + self.dataset + "_pre_train.emb"
-        self.pretrain_emb_filename_g = "../../pre_train/" + self.app + "/" + self.dataset + "_pre_train.emb"
-        self.community_filename = "../../data/" + self.app + "/" + self.dataset + ".sampled.cmty.txt"
-        self.model_log = "../../log/"
-        self.cache_filename_prefix = "../../cache/" + self.app + "/" + self.dataset
-        self.emb_filenames = ["../../results/" + self.app + "/" + self.dataset + "_gen_.emb",
-                              "../../results/" + self.app + "/" + self.dataset + "_dis_.emb"]
-        self.result_filename = "../../results/" + self.app + "/" + self.dataset + ".txt"
+        self.train_filename = "CommunityGAN/data/" + self.app + "/" + self.dataset + "_train.txt"
+        self.pretrain_emb_filename_d = "CommunityGAN/pre_train/" + self.app + "/" + self.dataset + "_pre_train.emb"
+        self.pretrain_emb_filename_g = "CommunityGAN/pre_train/" + self.app + "/" + self.dataset + "_pre_train.emb"
+        self.community_filename = "CommunityGAN/data/" + self.app + "/" + self.dataset + ".sampled.cmty.txt"
+        self.model_log = "CommunityGAN/log/"
+        self.cache_filename_prefix = "CommunityGAN/cache/" + self.app + "/" + self.dataset
+        self.emb_filenames = ["CommunityGAN/results/" + self.app + "/" + self.dataset + "_gen_.emb",
+                              "CommunityGAN/results/" + self.app + "/" + self.dataset + "_dis_.emb"]
+        self.result_filename = "CommunityGAN/results/" + self.app + "/" + self.dataset + ".txt"
