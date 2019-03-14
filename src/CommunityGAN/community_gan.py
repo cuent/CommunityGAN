@@ -173,7 +173,7 @@ class CommunityGAN(object):
         self.theta_g = self.sess.run(self.generator.embedding_matrix)
         pickle.dump(args, open(config.cache_filename_prefix + '.args.pkl', 'wb'))
         pickle.dump(self.theta_g, open(config.cache_filename_prefix + '.theta.pkl', 'wb'))
-        subprocess.call('python sampling.py %s' % (config.cache_filename_prefix + '.config.pkl'), shell=True, cwd='CommunityGAN/src/CommunityGAN')
+        subprocess.call('python CommunityGAN/src/CommunityGAN/sampling.py %s' % (config.cache_filename_prefix + '.config.pkl'), shell=True)
 
         motifs = pickle.load(open(config.cache_filename_prefix + '.motifs_sampled.pkl', 'rb'))
         paths = pickle.load(open(config.cache_filename_prefix + '.paths.pkl', 'rb'))
